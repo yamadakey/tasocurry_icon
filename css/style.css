@@ -1,0 +1,1024 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.05em;
+}
+
+
+
+button{
+    background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+}
+
+/* --------------------------------------
+              リンク飛び先設定
+----------------------------------------- */
+
+.rink{
+    background-color: #86D4BC;
+    position: relative;
+}
+
+#rink_top{
+    /* background-color: #83C3DB; */
+    position: absolute;
+    width: 100vw;
+    height: 1080px;
+}
+
+#rink_order{
+    /* background-color:#EE8A87; */
+    position: absolute;
+    width: 100vw;
+    margin-top: 1080px;
+}
+
+#rink_profile{
+    /* background-color: #9BCFE2; */
+    position: absolute;
+    width: 100vw;
+    margin-top: 2160px;
+}
+
+#rink_gallery{
+    /* background-color: #9BCFE2; */
+    position: absolute;
+    width: 100vw;
+    margin-top: 3240px;
+}
+
+#rink_icon{
+    /* background-color: #9BCFE2; */
+    position: absolute;
+    width: 100vw;
+    margin-top: 4320px;
+}
+
+
+
+
+/*-----------------------------
+        サイドバーのの設定
+----------------------------- */
+#side{
+    position: absolute;
+}
+
+.sideBlue{
+    width: 150px;
+    height: 1080px;
+    background-color: #9BCFE2;
+    color: white;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    font-size:50px ;
+    letter-spacing: 15px;
+    text-align: center ;
+    line-height: 150px;
+    transform: rotate(180deg);
+}
+
+.sideRed{
+    width: 150px;
+    height: 1080px;
+    background-color: #EE8A87;
+    color: white;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    font-size:50px ;
+    letter-spacing: 15px;
+    text-align: center ;
+    line-height: 150px;
+    transform: rotate(180deg);
+}
+
+
+/* --------------------------------------
+                main
+----------------------------------------- */
+article{
+    /* background-color: azure; */
+    margin-left:150px ;
+    max-width: 1770px;
+    height: auto;
+    text-align: center ;
+    color: #707070;
+}
+
+/* --------TOP画面---------------------------- */
+
+#top{
+    /* バックカラー*/
+    /* background-color: aqua;  */
+    height: 1080px;
+}
+
+.title{
+    display        : inline-block;
+    color          : #ffffff;            /* 文字の色 */
+    font-size      : 36pt;               /* 文字のサイズ */
+    letter-spacing : 8px;                /* 文字間 */
+    text-shadow    : 
+         2px  2px 0px #707070,
+        -2px  2px 0px #707070,
+         2px -2px 0px #707070,
+        -2px -2px 0px #707070,
+         2px  0px 0px #707070,
+         0px  2px 0px #707070,
+        -2px  0px 0px #707070,
+         0px -2px 0px #707070;        /* 文字の影 */
+    margin-top: 130px ;
+}
+
+.top_image img{
+    /* background-color: #EE8A87; */
+    width: 510px;
+    height: 510px;
+    margin-top: 40px;
+}
+
+.daimei{
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+#top h2{
+    font-size: 80px;
+    margin-top: -25px;
+    letter-spacing : 8px; 
+}
+
+.icon{
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/* ーーーーーボタンーーーーーーーー */
+#target{
+    width: 250px;
+    height: 250px;
+    background-color:#EE8A87;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+    margin-left: 80%;
+    margin-top: -300px;
+    transition: opacity .5s;
+}
+
+.target a{
+    /* background-color: #9BCFE2; */
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.target br{
+    display: block;
+    content: "";
+    margin: -150px 0;
+}
+
+#target:hover{
+    opacity: .5;
+}
+
+
+/* #target.pushed{
+    width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    background-color: #EE8A87;
+    margin-top: 10.5%;
+    margin-left: 80%;
+    margin-top: -300px;
+} */
+
+
+
+
+
+.clickhere{
+    font-size: 16px;
+    margin-top: 20px;
+    letter-spacing : 5px;
+}
+
+/* ------------------------------------
+                     オーダ
+-------------------ー---------------- */
+#order{
+    /* バックカラー*/
+    /* background-color: #EE8A87;  */
+    height: 1080px;
+    width: 1770px;
+}
+
+
+
+#order h3{
+    padding-top: 92px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+.container{
+    /* background-color: blue; */
+    display: grid;
+    grid-row: 268px 268px;
+    grid-template-columns: 
+        repeat(auto-fill,minmax(460px,1fr));
+        margin: 50px;
+}
+
+.container div{
+    background-color: #ffffff;
+    width: 460px;
+    height: 268px;
+    margin: 50px;
+    border:solid medium;
+    box-shadow: 10px 0px  #9BCFE2;
+    position: relative;
+}
+
+.boxE img{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.boxA img {
+    margin-top: 40px;
+}
+
+/* 青円 */
+.maru{
+    display: block;
+    background-color: #9BCFE2;
+    font-size: 30px;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+}
+
+/* テキスト */
+.text{
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    right: 50px;
+}
+
+
+
+/* ----------------------------------------
+               プロフィール 
+------------------------------------------- */
+#profile{
+    /* background-color: aquamarine; */
+    height: 1080px;
+}
+
+.icon_image img{
+    /* background-color: #9BCFE2; */
+    position: absolute;
+    left: 284px;
+    width: 200px;
+    height: 200x;
+    margin-top: 150px;
+    padding: 5px;
+    border: solid 0.1px;
+}
+
+/* 自己紹介 */
+.zikosyokai{
+    /* background-color: aliceblue; */
+    position: absolute;
+    left: 550px;
+    top: 2280px;
+    width: 700px;
+    height: 200px;
+    text-align: left;
+    margin-top: 34px;   
+}
+
+.zikosyokai h3{
+    font-size:46px;
+    font-weight: bold;
+    color: #707070;
+}
+
+.insta{
+    position: absolute;
+    left:260px ;
+    top: 7px;
+}
+
+.insta:hover{
+    opacity: .6;
+}
+
+.illustrater{
+    color: #707070 0.8;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.ptag{
+    font-size: 20px;
+}
+
+/* こだわり */
+.kodawari{
+    /* background-color: azure; */
+    position: absolute;
+    left: 15%;
+    top: 2650px;
+    width: 600px;
+    height: 400px;
+}
+
+.kodawari h3{
+    font-size: 30px;
+}
+
+.kodawari_img img{
+    width: 392px;
+    height: auto;
+    margin-top: 46px;
+}
+
+.kodawari_a{
+    /* background-color:red; */
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    list-style: none;
+   
+}
+
+.kodawari_a li{
+    transition: opacity .3s;
+}
+
+.kodawari_a li:hover{
+    opacity: 0.5;
+}
+
+/* 配色ボタン */
+.pro_color{
+    position: absolute;
+    top: -322px;
+    left: 500px;
+    /* border: solid thin #707070; */
+    padding: 0 10px 0 10px ;
+    border-bottom: solid thin #707070;
+    cursor: pointer;
+}
+
+/* オプションボタン */
+.pro_option{
+    position: absolute;
+    top: -191px;
+    left: -46px;
+    border-bottom: solid thin  #707070;
+    padding: 0 10px 0 10px ;
+    cursor: pointer;
+}
+
+/* 線ボタン */
+.pro_line{
+    position : absolute;
+    top: -162px;
+    left: 500px;
+    border-bottom: solid thin #707070;
+    padding: 0 10px 0 10px ;
+    cursor: pointer;
+}
+
+/* ---------右下------------------------- */
+
+/* イラストの説明 */
+#pro_setumei{
+    position: absolute;
+    top: 2630px;
+    left: 55%;
+}
+
+
+
+
+/* ----------------------
+       【配色と肌の色】 
+------------------------- */
+
+.profile_setumei{
+    /* background-color: #EE8A87; */
+    display:none;
+    width: 550px;
+    height: 500px;
+    text-align: center;
+}
+
+.profile_setumei h3{
+    font-weight: bold;
+    font-size: 34px;
+    color: #707070;
+}
+
+/* 円の配列 */
+.colorB{
+    /* background-color: #9BCFE2; */
+    width: 550px;
+    display: flex;
+    list-style: none;
+    margin-left: 28px;
+}
+
+.colorB li{
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    /* border:solid thin #707070; */
+    border-radius: 50%; 
+    margin: 25px;
+}
+
+/* 配色パターン */
+.colorRed{
+    background-color: #FD91BA;
+}
+.colorYellow{
+    background-color: #FEFFBB;
+}
+.colorBlue{
+    background-color:  #8CC4FF;
+}
+.colorGreen{
+    background-color: #86D4BC;
+}
+
+/* 肌の色 */
+.skin{
+    display: flex;
+    margin-left: 22%;
+}
+
+.colorSkin{
+    background-color: #F3CAE2;
+}
+.colorSkinB{
+    background-color: #F7DEEC;
+}
+
+.colorA p{
+    font-size: 18px;
+    color: #707070;
+}
+
+.colorC{
+    margin-top: 60px;
+}
+
+/* ----------------------
+       【線と線の色】 
+------------------------- */
+.profile_setumei02{
+    /* background-color: #EE8A87; */
+    display:none;
+    width: auto;
+    height: 500px;
+}
+
+.profile_setumei02 h3{
+    font-weight: bold;
+    font-size: 34px;
+    color: #707070;
+    text-align: center;
+}
+
+.profile_setumei02 p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 70px;
+}
+
+.line_img{
+    position: relative;
+}
+
+.line_img01{
+    position: absolute;
+    left: -60px;
+    top: -10px;
+}
+
+/* ----------------------
+       【オプション】 
+------------------------- */
+.option{
+    /* background-color: #EE8A87; */
+    display:none;
+    width: auto;
+    height: 500px;
+    margin-top: 140px;
+}
+
+
+.option h3{
+    font-weight: bold;
+    font-size: 34px;
+    color: #707070;
+    text-align: center;
+}
+
+.option p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 70px;
+}
+
+.option_img{
+    position: relative;
+}
+
+.option_img01{
+    position: absolute;
+    left: -60px;
+    top: -10px;
+}
+
+/* アクティブ、非アクティブボタン */
+.active01{
+    display: block;
+    z-index: 1;
+}
+
+
+/* ----------------------------------------
+               ギャラリー 
+------------------------------------------- */
+
+#gallery{
+     /* background-color: aquamarine; */
+     height: 980px;
+
+}
+
+#gallery h3{
+    display: none;
+}
+
+/* 【ボタン切り替え】 */
+/* .button_gallery{
+    display: flex;
+    padding-left: 130px;
+    padding-top:66px ;
+    display: none;
+}
+
+.button_gallery button:hover{
+    opacity: .7;
+} */
+
+/* .zisseki {
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: #9BCFE2;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+} */
+/* .sakuhin{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: #9BCFE2;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 40px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+} */
+
+.zisseki_display .active{
+    display: none;
+}
+.work_display{
+    display: none;
+}
+
+
+/* ----------------------
+         【実績】
+-----------------------ーー */
+
+/* スクロール設定 Y軸  */
+.scroll {
+    /* background-color: #86D4BC; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-type: y proximity;
+    height: 940px;
+    width: 1500px;
+    margin-top: 80px;
+    margin-left: 100px;
+  }
+
+  .scloll_2 {
+      /* background-color: #EE8A87; */
+    scroll-snap-align: start;
+    height: 600px;
+    margin-bottom: -220px;
+    margin-left: -130px;
+  }
+
+#zisseki{
+   /* background: #F3CAE2; */
+   width: 1580px; 
+   height: 860px;
+   margin-left: 130px;
+   margin-top: 60px;
+}
+
+/* 実績タイトル */
+.zisseki_title{
+    list-style: none;
+    /* background:white; */
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    font-size: 26px;
+    color: #83C3DB;
+    font-weight: bolder;
+    margin-top: -290px;
+    margin-bottom: 124px;
+    text-align: left;
+    position: relative;
+}
+
+/* ----実績 横バー ---- */
+
+/* スクロール設定 X軸  */
+.scloll_x{
+    /* background-color: blue; */
+    overflow: auto;
+    scroll-snap-type: x proximity;
+    height: 300px;
+    width: 1500px;
+    margin-left: 250px;
+}
+
+.scloll_x02{
+      /* background-color: #EE8A87; */
+      scroll-snap-align: start;
+      height: 600px;
+      width: 3000px;
+    height: 300px;
+    display: flex;
+}
+
+/* 実績 作品枠 */
+.en figure{
+    /* background: #8CC4FF; */
+    width: 250px;
+    height: 250px;
+    margin-right: 70px;  
+}
+
+figcaption{
+    color: #707070;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* -----------画像配置----------- */
+.shop05 img{
+   margin-top: 54px;
+   margin-bottom: 36px;
+}
+
+/* ----------------------
+         【作品】
+-----------------------ーー */
+
+.work{
+    /* background-color: #83C3DB; */
+    list-style: none;
+    overflow: hidden;
+    margin-top: 70px;
+    margin-left: 100px;
+    overflow-y: auto;
+    scroll-snap-type: y proximity;
+    height: 850px;
+    width: auto;
+  }
+
+  .work li{
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+
+  /* ul li:last-child{
+    margin-right:0;
+  } */
+
+/* ------------------------------------
+                アイコン
+---------------------------------------*/
+
+#icon h3{
+    font-size: 40px;
+    margin-top: 122px;
+    color: #707070;
+}
+
+#icon p{
+    margin-top: 18px;
+}
+
+.icon01{
+    margin-right: 20px;
+}
+
+
+
+/* スクロール設定 X軸  */
+.icon_x{
+    /* background-color: blue; */
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    height: 300px;
+    width: 1350px;
+    margin-left: 220px;
+    margin-top: 80px;
+}
+
+.icon_illust{
+    /* height: 300px;
+    width: 1400px; */
+    scroll-snap-align: start;
+    height: auto;
+    width: 2000px;
+    display: flex;
+}
+
+.icon_illust div{
+    display: inline-block;
+    background-color: #8CC4FF;
+    width:250px ;
+    height: 250px;
+    margin-right: 40px;
+}
+
+/* ーーーーーボタンーーーーーーーー */
+#target02{
+    width: 250px;
+    height: 250px;
+    background-color:#EE8A87;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+    margin-left: 43%;
+    margin-top: 120px;
+    transition: opacity .5s;
+}
+
+/* #target02.pushed{
+    height: 198px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.9);
+    background-color: pink;
+    margin-top: 10.5%;
+} */
+
+.clickhere{
+    font-size: 16px;
+    margin-top: 20px;
+    letter-spacing : 5px;
+}
+
+#target02:hover{
+    opacity: .5;
+}
+
+
+
+/* ----------------------------------------
+                 フッター
+------------------------------------------ */
+footer{
+    margin-top: 125px;
+    background-color: #F7C1BF;
+    max-width: auto;
+    height: 380px;
+    text-align: center;
+}
+
+.footer_image img{
+    /* background-color: #EE8A87; */
+    width: 570px;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 240px;
+}
+
+footer p{
+    color: #ffffff;
+    font-size: 22px;
+    margin-left: 200px;
+    margin-top: 26px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+        spの設定 768px以下の表示
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+@media screen and (max-width: 768px) {
+
+    #side{
+        display: none;
+    }
+
+    article{
+        margin-left: 0%;
+    }
+
+    /* TOP */
+    #top{
+        height: 70%;
+    }
+
+    #target{
+        display: none;
+    }
+
+    .title{
+        font-size      : 28pt;               /* 文字のサイズ */
+        letter-spacing : 8px;                /* 文字間 */
+        text-shadow    : 
+             2px  2px 0px #707070,
+            -2px  2px 0px #707070,
+             2px -2px 0px #707070,
+            -2px -2px 0px #707070,
+             2px  0px 0px #707070,
+             0px  2px 0px #707070,
+            -2px  0px 0px #707070,
+             0px -2px 0px #707070;        /* 文字の影 */
+        margin-top: 130px ;
+    }
+
+    #top h2{
+        font-size: 60px;
+        margin-top: -10px;
+    }
+
+
+    /* オーダー方法 */
+    #order{
+        /* background-color: #8CC4FF; */
+        width: auto;
+        height: 2500px;
+        margin-top: 50px;
+    }
+
+    .container{
+       display: inline-block;
+    }
+    .container div{
+        margin-bottom: 100px;
+    }
+
+    /* プロフィール */
+    #profile{
+        /* background-color: #83C3DB; */
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .icon_image img{
+        position: initial;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .zikosyokai{
+        position: initial;
+        text-align: center;
+    }
+
+    .zikosyokai h3{
+        /* background: #86D4BC; */
+    }
+
+    .illustrater{
+        margin-bottom: 10px;
+    }
+
+    .kodawari{
+        margin-top: 50px;
+        position: initial;
+        margin-left: 70px;
+    }    
+
+    #pro_setumei{
+        position: initial;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: 8%;
+    }
+
+    /* ギャラリー */
+    #gallery{
+        position: inherit;
+    }
+
+    #gallery h3{
+        display: block;
+        margin-top: 150px;
+        font-size: 60px;
+    }
+
+    .scroll {
+        /* background-color: #9BCFE2; */
+        margin-left: 0px;
+        width: auto;
+    }
+
+    .scloll_2 {
+        /* background-color: #707070; */
+        width: auto;
+        height: 300px;
+        margin-left: -310px;
+        
+    }
+
+    .zisseki_title{
+        /* background-color: #86D4BC; */
+        position: initial;
+        margin-left: 22%;
+        margin-top: -450px;
+        text-align: center;
+    }
+
+    .scloll_x{
+        /* background-color: #86D4BC; */
+        margin-top: 300px;
+    }
+
+    /* アイコン */
+    #icon {
+        margin-top: 300px;
+    }
+
+    .icon_x{
+        margin-left: 0px;
+        width: auto;
+    }
+
+    #target02{
+        margin-left: 32%;
+    }
+
+    /* フッター */
+    footer{
+        max-width: 768px;
+        height: 260px;
+    }
+
+    .footer_image img{
+        width: 300px;
+        margin-top: 55px;
+        margin-left: 50px;
+    }
+
+    footer p{
+        margin-left: 0px;
+    }
+}
+
